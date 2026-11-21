@@ -1,20 +1,15 @@
-import AuthView from '@/views/AuthView.vue'
-import HomeView from '@/views/HomeView.vue'
+
+import ListingsView from '@/views/ListingsView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      name: "Home",
-      component: HomeView,
-      path: "/"
+      name: "Listings",
+      component: ListingsView,
+      path: "/listings"
     },
-    {
-      name: "Auth",
-      component: AuthView,
-      path: "/auth"
-    }
   ],
 })
 
